@@ -16,4 +16,5 @@ class order():
 class drone():
     def __init__(self, position, n_products):
         self.position = position
+        self.load = 0
         self.products = [0 for i in xrange(n_products)]
