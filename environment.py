@@ -9,8 +9,8 @@ def spatial_constraint(x, y, data):
 
 def weight_constraint(drone, i_prod, n_product, max_weight, prod_catalogue):
     pw = prod_catalogue[i_prod]
-    available = max_weight-drone.weight
-    return n_product if (available)/pw>=n_product else int(available/pw)
+    available = max_weight-drone.weight                         #weight objesini nereden cagiriyoruz? hangi classi kullandik ? 
+    return n_product if (available)/pw>=n_product else int(available/pw)    #buyuktur mu kucuktur mu ? amac hatirlanacak.
 # rewardcuyu uyarmayi unutma
 
 #supremum&infimum constraint
